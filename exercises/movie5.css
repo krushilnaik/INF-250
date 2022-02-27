@@ -75,19 +75,18 @@ a:hover {
 .description {
 	text-indent: 2em;
 	width: 60%;
+	max-width: 650px;
 	font-style: italic;
 	color: lightskyblue;
 	font-size: 19px;
 	margin-bottom: 15px;
 }
 
-.crimson {
-	font-weight: bold;
-	color: tomato;
+.encanto {
+	color: goldenrod;
 }
 
-.beige {
-	font-weight: bold;
+.gift {
 	color: coral;
 }
 
