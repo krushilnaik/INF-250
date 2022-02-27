@@ -26,7 +26,7 @@ h1 {
 	gap: 5px;
 	background-color: #ffffff25;
 	padding: 0 0.3em;
-	padding-right: 0.6em;
+	padding-right: 0.4em;
 	border-radius: 10px;
 }
 
@@ -34,10 +34,23 @@ img {
 	border-radius: 10px;
 }
 
+a {
+	text-decoration: none;
+	transition: color 300ms;
+	color: aliceblue;
+	font-size: 24px;
+}
+
+a:hover {
+	color: cadetblue;
+}
+
 .rating {
 	position: absolute;
-	top: -15px;
-	right: -15px;
+	top: 0;
+	right: 0;
+	transform-origin: 0 100%;
+	transform: translate(50%, -50%);
 	display: grid;
 	text-align: center;
 	align-items: center;
@@ -64,6 +77,7 @@ img {
 	width: 60%;
 	font-style: italic;
 	font-size: 19px;
+	margin-bottom: 15px;
 }
 
 .people {
