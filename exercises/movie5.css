@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Trade+Winds&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -23,9 +25,6 @@ body {
 body::before {
 	content: "";
 	position: absolute;
-	/* left: 0; */
-	/* bottom: 0; */
-	/* content: url(./images/leaves.png); */
 	background: url(./images/leaves.png) 0 89vh repeat-x;
 	width: 100vw;
 	opacity: 0.75;
@@ -44,6 +43,10 @@ h1 {
 	padding: 0 0.3em;
 	padding-right: 0.4em;
 	border-radius: 10px;
+}
+
+h1 > span {
+	font-family: "Trade Winds", cursive;
 }
 
 .screenshot {
@@ -91,10 +94,12 @@ a:hover {
 .description {
 	text-indent: 2em;
 	width: 85%;
+	font-family: "Nanum Pen Script", cursive;
 	max-width: 650px;
 	font-style: italic;
 	color: lightskyblue;
-	font-size: 19px;
+	font-size: 24px;
+	filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.719));
 	margin-bottom: 15px;
 }
 
@@ -136,7 +141,7 @@ a:hover {
 	color: #fa79be;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	.screenshot {
 		width: 350px;
 	}
