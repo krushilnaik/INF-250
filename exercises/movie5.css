@@ -5,6 +5,7 @@
 }
 
 body {
+	position: relative;
 	height: 100vh;
 	width: 100vw;
 	background-color: #1b1f2e;
@@ -15,6 +16,21 @@ body {
 	gap: 20px;
 	color: honeydew;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	background: #ad5389;
+	background: linear-gradient(to top, #2c0c3d, #5d438d);
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	/* left: 0; */
+	/* bottom: 0; */
+	/* content: url(./images/leaves.png); */
+	background: url(./images/leaves.png) 0 89vh repeat-x;
+	width: 100vw;
+	opacity: 0.75;
+	height: 100vh;
+	z-index: -1;
 }
 
 hr {
