@@ -1,24 +1,35 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  display: grid;
-  place-content: center;
-  text-align: center;
+	display: grid;
+	place-content: center;
+	text-align: center;
+	gap: 35px;
 
-  height: 100vh;
-  width: 100vw;
+	height: 100vh;
+	width: 100vw;
 
-  background: #202436;
-  color: lavender;
+	background: #202436;
+	color: lavender;
 }
 
 .images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+	display: flex;
+	margin: auto;
+	gap: 15px;
+}
+
+img {
+	border-radius: 10px;
+}
+
+.hobby {
+	width: 60%;
+	font-size: 24px;
+	margin: auto;
 }
