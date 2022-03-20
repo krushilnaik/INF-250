@@ -1,0 +1,20 @@
+.yurts {
+	background-image: url(../images/yurt.jpg);
+}
+
+.content {
+	padding: 15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+section {
+	width: 150px;
+}
+
+section p {
+	margin-top: 10px;
+	font-size: 18px;
+}
