@@ -31,7 +31,6 @@ header {
 	display: grid;
 	align-items: center;
 	border-bottom: 1px solid #000;
-	margin-bottom: 25px;
 }
 
 nav ul {
@@ -65,7 +64,7 @@ nav a:hover {
 	gap: 50px;
 	text-align: center;
 	justify-content: center;
-	margin: auto;
+	margin: 40px auto;
 	max-width: 1200px;
 }
 
@@ -86,7 +85,6 @@ footer {
 	text-align: center;
 	font-weight: bold;
 	font-size: 20px;
-	margin-top: 40px;
 	padding: 20px 0;
 }
 
