@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -20,6 +22,8 @@ main {
 
 h1 {
 	text-align: center;
+	font-size: 36px;
+	font-family: "Alfa Slab One", cursive;
 }
 
 li {
