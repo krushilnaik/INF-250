@@ -65,6 +65,8 @@ nav a:hover {
 	gap: 50px;
 	text-align: center;
 	justify-content: center;
+	margin: auto;
+	max-width: 1200px;
 }
 
 figure img {
