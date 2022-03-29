@@ -1,0 +1,23 @@
+.gang {
+	width: 45vmin;
+	height: 45vmin;
+	transform: rotate(45deg);
+	transform-origin: 50% 50%;
+	border-radius: 10px;
+	background-color: crimson;
+	margin: auto;
+}
+
+.explore {
+	position: relative;
+	text-align: center;
+}
+
+.explore::after {
+	content: "→";
+	position: absolute;
+	font-size: 48px;
+	top: 50%;
+	right: -0.75em;
+	transform: translateY(-50%);
+}
