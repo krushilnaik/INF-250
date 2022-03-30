@@ -14,7 +14,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr auto;
 	grid-template-areas: "main header" "footer footer";
-	justify-items: center;
+	/* justify-items: center; */
 	align-items: center;
 	margin: auto;
 	width: 60vw;
@@ -172,19 +172,29 @@ figcaption {
 
 @media screen and (max-width: 768px) {
 	h1 {
+		position: unset;
+		text-align: center;
 		font-size: 36px;
+		transform: unset;
+		border-bottom: 1px solid white;
+		margin-bottom: 15px;
+	}
+
+	h2,
+	h3 {
+		color: honeydew;
 	}
 
 	.wrapper {
 		width: 90vw;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	main {
-		display: flex;
 		order: 1;
+		text-align: center;
 	}
 
 	header {
