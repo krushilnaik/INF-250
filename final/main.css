@@ -32,12 +32,21 @@ header {
 	filter: drop-shadow(0 0 5px black);
 }
 
-main > h1 {
+h1 {
 	position: absolute;
 	top: 2%;
 	left: 50%;
 	transform: translateX(-50%);
 	color: antiquewhite;
+	text-align: center;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
 }
 
 nav {
@@ -162,8 +171,29 @@ figcaption {
 }
 
 @media screen and (max-width: 1024px) {
+	h1 {
+		font-size: 20px;
+	}
+
 	.wrapper {
+		width: 90vw;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	main {
+		display: flex;
+		order: 1;
+	}
+
+	header {
+		order: 2;
+		height: 60vmin;
+		width: 60vmin;
+	}
+
+	footer {
+		order: 3;
 	}
 }
