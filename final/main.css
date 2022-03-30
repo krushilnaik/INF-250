@@ -170,9 +170,9 @@ figcaption {
 	border-radius: 7px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 	h1 {
-		font-size: 20px;
+		font-size: 36px;
 	}
 
 	.wrapper {
@@ -195,5 +195,16 @@ figcaption {
 
 	footer {
 		order: 3;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 20px;
+	}
+
+	header {
+		height: 70vmin;
+		width: 70vmin;
 	}
 }
