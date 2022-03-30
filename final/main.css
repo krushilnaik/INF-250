@@ -29,6 +29,7 @@ header {
 	transform: rotate(45deg);
 	grid-area: header;
 	overflow: hidden;
+	filter: drop-shadow(0 0 5px black);
 }
 
 main > h1 {
@@ -46,16 +47,18 @@ nav {
 	height: 100%;
 }
 
-nav::after {
+ul::after {
 	position: absolute;
 	content: url(./images/jolly\ roger.png);
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%) rotate(-45deg) scale(0.3);
+	transform: translate(-50%, -50%) scale(0.3);
 	filter: drop-shadow(0 0 25px black);
+	z-index: 1;
 }
 
 nav ul {
+	position: relative;
 	display: grid;
 	transform: rotate(-45deg) translateY(-24%);
 	grid-template-columns: repeat(4, 1fr);
@@ -124,10 +127,13 @@ li img {
 	filter: grayscale(80%);
 	transition-property: filter transform;
 	transition-duration: 350ms;
-	width: 100%;
-	height: 130px;
 	object-fit: cover;
-	object-position: top center;
+}
+
+li figure,
+li img {
+	width: 100%;
+	height: 100%;
 }
 
 li:hover img {
@@ -139,30 +145,25 @@ li:hover figcaption {
 	opacity: 1;
 }
 
-figure {
-	position: relative;
-}
-
 figcaption {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	font-size: 28px;
 	font-weight: bold;
 	color: black;
 	background-color: white;
 	padding: 5px;
 	opacity: 0;
+	z-index: 10;
+	border: solid 3px black;
+	border-radius: 7px;
 }
 
-.bottom.left {
-	left: 60%;
-}
-
-.bottom.right {
-	left: 30%;
-}
-
-.bottom {
-	top: 20%;
+@media screen and (max-width: 1024px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
 }
