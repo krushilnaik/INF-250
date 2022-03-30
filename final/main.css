@@ -135,10 +135,34 @@ li:hover img {
 	filter: grayscale(0);
 }
 
+li:hover figcaption {
+	opacity: 1;
+}
+
 figure {
 	position: relative;
 }
 
 figcaption {
 	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	color: black;
+	background-color: white;
+	padding: 5px;
+	opacity: 0;
+}
+
+.bottom.left {
+	left: 60%;
+}
+
+.bottom.right {
+	left: 30%;
+}
+
+.bottom {
+	top: 20%;
 }
