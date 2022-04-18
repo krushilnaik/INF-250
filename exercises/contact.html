@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="contact.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Name:"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="Email:"
+      />
+      <input
+        type="date"
+        name="birthdate"
+        id="birthdate"
+        required
+        placeholder="Birthdate:"
+      />
+      <textarea
+        name="feedback"
+        id="feedback"
+        required
+        cols="40"
+        rows="6"
+        maxlength="1000"
+        placeholder="Feedback:"
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

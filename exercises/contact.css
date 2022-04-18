@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  background-color: #201d2e;
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  font-size: 24px;
+  border-radius: 5px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  line-height: 2em;
+  padding: 0 0.5em;
+}
+
+textarea {
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder,
+input[type="date"] {
+  color: #b5b5b5;
+}
+
+input[type="date"] {
+  color-scheme: dark;
+}
+
+button {
+  width: fit-content;
+  margin: auto;
+  font-size: 20px;
+  border-radius: 9999px;
+  border: none;
+  padding: 7px 18px;
+}
