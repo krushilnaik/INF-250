@@ -20,23 +20,13 @@ textarea {
   border-radius: 5px;
   border: solid 1px white;
   background-color: transparent;
-  color: white;
   line-height: 2em;
   padding: 0 0.5em;
+  color-scheme: dark;
 }
 
 textarea {
   resize: none;
-}
-
-input::placeholder,
-textarea::placeholder,
-input[type="date"] {
-  color: #b5b5b5;
-}
-
-input[type="date"] {
-  color-scheme: dark;
 }
 
 button {
