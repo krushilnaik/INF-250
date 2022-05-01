@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
 
+@font-face {
+  font-family: KeelBB;
+  src: url(../fonts/KEELBB__.TTF);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +20,7 @@ body {
   min-height: 100vh;
   background-color: #222;
   overflow-x: hidden;
-  padding: 30px;
+  padding: 0;
   color: honeydew;
 }
 
@@ -76,6 +81,10 @@ img {
 
 article {
   font-size: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -89,13 +98,27 @@ main {
 
 nav ul {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   list-style-type: none;
+  column-gap: 1.75rem;
 }
 
 figcaption {
   font-family: Caveat, cursive;
-  font-size: 36px;
+  font-size: 1.5rem;
+}
+
+li a {
+  font-family: Caveat, cursive;
+  font-size: 2rem;
+}
+
+nav ul {
+  background: url(../images/rip.svg) bottom;
+  padding: 0 10px 15px 10px;
+  color: crimson;
+  fill: #e7b982;
 }
 
 .group {
@@ -113,6 +136,12 @@ hr {
   width: 75%;
   border: none;
   border-top: dotted 3px rgba(34, 34, 34, 0.473);
+}
+
+.home {
+  margin: auto;
+  font-size: 1.5rem;
+  font-family: KeelBB;
 }
 
 @media screen and (min-width: 1025px) {
