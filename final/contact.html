@@ -42,46 +42,59 @@
       place-content: center;
     "
   >
-    <form
-      style="
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        max-width: 30rem;
-        width: 50vw;
-        gap: 10px;
-        margin: auto;
-      "
-    >
-      <h1 style="color: honeydew">Saw something wrong?</h1>
-      <div class="group">
-        <input type="radio" name="urgency" id="no" />
-        <label for="no">Not urgent</label>
-        <input type="radio" name="urgency" id="kinda" />
-        <label for="kinda">Kinda urgent</label>
-        <input type="radio" name="urgency" id="very" />
-        <label for="very">Super urgent</label>
-      </div>
-      <input type="text" name="name" id="name" placeholder="Name:" />
-      <input type="email" name="email" id="email" placeholder="Email:" />
-      <textarea
-        name="message"
-        id="message"
-        cols="30"
-        rows="10"
-        placeholder="Message:"
-      ></textarea>
-      <div>
-        <input type="checkbox" name="confirmation" id="confirmation" />
-        <label for="confirmation" style="margin-right: 0">
-          Send me an email confirmation
-        </label>
-      </div>
-      <input
-        type="submit"
-        value="Let me know"
-        style="padding: 10px; width: fit-content; margin: auto; cursor: pointer"
-      />
-    </form>
+    <main>
+      <form
+        style="
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          max-width: 30rem;
+          width: 50vw;
+          gap: 10px;
+          margin: auto;
+        "
+      >
+        <h1 style="color: honeydew">Saw something wrong?</h1>
+        <div class="group">
+          <input type="radio" name="urgency" id="no" />
+          <label for="no">Not urgent</label>
+          <input type="radio" name="urgency" id="kinda" />
+          <label for="kinda">Kinda urgent</label>
+          <input type="radio" name="urgency" id="very" />
+          <label for="very">Super urgent</label>
+        </div>
+        <input type="text" name="name" id="name" placeholder="Name:" />
+        <input type="email" name="email" id="email" placeholder="Email:" />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Message:"
+        ></textarea>
+        <div>
+          <input type="checkbox" name="confirmation" id="confirmation" />
+          <label for="confirmation" style="margin-right: 0">
+            Send me an email confirmation
+          </label>
+        </div>
+        <input
+          type="submit"
+          value="Let me know"
+          style="
+            padding: 10px;
+            width: fit-content;
+            margin: auto;
+            cursor: pointer;
+          "
+        />
+      </form>
+    </main>
+
+    <footer>
+      <div>Krushil Naik</div>
+      <div>INF 250 | Spring 2022</div>
+      <a href="contact.html">See someting wrong?</a>
+    </footer>
   </body>
 </html>

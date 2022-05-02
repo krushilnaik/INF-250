@@ -96,6 +96,11 @@ main {
   margin: auto;
 }
 
+footer {
+  margin: auto;
+  text-align: center;
+}
+
 nav ul {
   display: flex;
   flex-flow: row wrap;
