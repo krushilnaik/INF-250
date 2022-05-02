@@ -22,6 +22,10 @@
         padding: 5px 10px;
       }
 
+      label {
+        margin-right: 10px;
+      }
+
       label,
       input::placeholder,
       textarea::placeholder {
@@ -50,6 +54,14 @@
       "
     >
       <h1 style="color: honeydew">Saw something wrong?</h1>
+      <div class="group">
+        <input type="radio" name="urgency" id="no" />
+        <label for="confirmation">Not urgent</label>
+        <input type="radio" name="urgency" id="kinda" />
+        <label for="confirmation">Kinda urgent</label>
+        <input type="radio" name="urgency" id="very" />
+        <label for="confirmation">Super urgent</label>
+      </div>
       <input type="text" name="name" id="name" placeholder="Name:" />
       <input type="email" name="email" id="email" placeholder="Email:" />
       <textarea
@@ -61,7 +73,9 @@
       ></textarea>
       <div>
         <input type="checkbox" name="confirmation" id="confirmation" />
-        <label for="confirmation">Send me an email confirmation</label>
+        <label for="confirmation" style="margin-right: 0">
+          Send me an email confirmation
+        </label>
       </div>
       <input
         type="submit"
