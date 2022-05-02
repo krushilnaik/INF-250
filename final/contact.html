@@ -5,6 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      input,
+      textarea {
+        background-color: transparent;
+        border: solid 1px white;
+        color: aliceblue;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: aliceblue;
+      }
+    </style>
   </head>
-  <body></body>
+  <body style="background-color: #222">
+    <form
+      action=""
+      style="
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 30rem;
+        width: 50vw;
+        gap: 10px;
+        margin: auto;
+      "
+    >
+      <h1 style="color: honeydew">Saw something wrong?</h1>
+      <input type="text" name="name" id="name" />
+      <input type="email" name="email" id="email" />
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <input
+        type="submit"
+        value="Let me know"
+        style="padding: 10px; width: fit-content; margin: auto"
+      />
+    </form>
+  </body>
 </html>
