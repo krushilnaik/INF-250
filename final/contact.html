@@ -22,6 +22,7 @@
         padding: 5px 10px;
       }
 
+      label,
       input::placeholder,
       textarea::placeholder {
         color: aliceblue;
@@ -59,6 +60,10 @@
         rows="10"
         placeholder="Message:"
       ></textarea>
+      <div>
+        <input type="checkbox" name="confirmation" id="confirmation" />
+        <label for="confirmation">Send me an email confirmation</label>
+      </div>
       <input
         type="submit"
         value="Let me know"
