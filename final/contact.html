@@ -12,6 +12,8 @@
         background-color: transparent;
         border: solid 1px white;
         color: aliceblue;
+        font-size: 1.5rem;
+        padding: 5px 10px;
       }
 
       input::placeholder,
@@ -34,13 +36,19 @@
       "
     >
       <h1 style="color: honeydew">Saw something wrong?</h1>
-      <input type="text" name="name" id="name" />
-      <input type="email" name="email" id="email" />
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <input type="text" name="name" id="name" placeholder="Name:" />
+      <input type="email" name="email" id="email" placeholder="Email:" />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Message:"
+      ></textarea>
       <input
         type="submit"
         value="Let me know"
-        style="padding: 10px; width: fit-content; margin: auto"
+        style="padding: 10px; width: fit-content; margin: auto; cursor: pointer"
       />
     </form>
   </body>
